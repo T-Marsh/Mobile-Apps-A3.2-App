@@ -198,7 +198,7 @@ public class GridAdapter extends BaseAdapter {
             anim.setRepeatCount(Animation.INFINITE);
             imageView.startAnimation(anim);
         } else if (names.get(position).toString().equals("COMMUNICATION")) {
-            imageView.setImageResource(R.drawable.ic_cgpa);
+            imageView.setImageResource(R.drawable.email_symbol);
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
