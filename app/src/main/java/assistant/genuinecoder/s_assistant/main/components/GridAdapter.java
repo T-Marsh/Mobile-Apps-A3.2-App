@@ -34,6 +34,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import assistant.genuinecoder.s_assistant.main.music.MusicActivity;
 import assistant.genuinecoder.s_assistant.main.music.MusicListActivity;
 import assistant.genuinecoder.s_assistant.R;
 import assistant.genuinecoder.s_assistant.main.AppBase;
