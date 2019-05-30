@@ -20,52 +20,58 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#921AAE66"
         android:orientation="horizontal"
         android:padding="10dp">
 
         <TextView
             android:id="@+id/firstSong"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:padding="10dp"
             android:text="Song One"
             android:textColor="#000000"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/playFirstSong"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="playSongOne"
             android:padding="10dp"
             android:text="Play"
-            android:textSize="20dp"
-            android:onClick="playSongOne"/>
+            android:textSize="20dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#921AAE66"
         android:orientation="horizontal"
         android:padding="10dp">
 
         <TextView
             android:id="@+id/secondSong"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:padding="10dp"
             android:text="Song Two"
             android:textColor="#000000"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/playSecondSong"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="playSongTwo"
             android:padding="10dp"
             android:text="Play"
-            android:textSize="20dp"
-            android:onClick="playSongTwo"/>
+            android:textSize="20dp" />
 
     </LinearLayout>
 
