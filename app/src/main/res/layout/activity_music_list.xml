@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="#921AAE66"
+        android:background="#C21D1D"
         android:orientation="horizontal"
         android:padding="10dp">
 
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="#921AAE66"
+        android:background="#C21D1D"
         android:orientation="horizontal"
         android:padding="10dp">
 
