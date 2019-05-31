@@ -61,8 +61,7 @@
             android:name=".main.music.MusicListActivity"
             android:parentActivityName=".main.AppBase" />
         <activity
-            android:name=".main.music.MusicActivity"
-            android:parentActivityName=".main.AppBase" />
+            android:name=".main.music.MusicActivity" />
     </application>
 
 </manifest>

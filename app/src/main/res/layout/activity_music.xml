@@ -74,4 +74,12 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn_returnToMusicList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="ReturnToMusicList"
+        android:text="Return to Music List" />
+
 </LinearLayout>

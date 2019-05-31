@@ -150,4 +150,18 @@ public class MusicActivity extends AppCompatActivity {
             playBtn.setBackgroundResource(R.drawable.play);
         }
     }
+
+    public void ReturnToMusicList(View view) {
+        Intent intent = new Intent(this, MusicListActivity.class);
+
+        if (mp != null) {
+            mp.stop();
+            mp.release();
+            mp = null;
+        } else {
+
+        }
+
+        startActivity(intent);
+    }
 }
