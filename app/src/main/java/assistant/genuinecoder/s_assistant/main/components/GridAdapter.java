@@ -21,8 +21,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.ScaleAnimation;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.DatePicker;
@@ -34,7 +32,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import assistant.genuinecoder.s_assistant.main.music.MusicActivity;
 import assistant.genuinecoder.s_assistant.main.music.MusicListActivity;
 import assistant.genuinecoder.s_assistant.R;
 import assistant.genuinecoder.s_assistant.main.AppBase;
@@ -56,8 +53,7 @@ public class GridAdapter extends BaseAdapter {
     public static void makeNotification(String userIntrouble) {
         Log.d("NOTIFICATION", "Building..........");
         Intent notificationIntent = new Intent(activity.getApplicationContext(), NoteActivity.class);
-//        notificationIntent.putExtra(MainListAdapter.USER_EMAIL,userIntrouble);
-//        notificationIntent.putExtra(MainListAdapter.IS_EMERGENCY, true);
+
         PendingIntent pIntent = PendingIntent.getActivity(activity, 0, notificationIntent,
                 0);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(activity.getBaseContext());
@@ -110,16 +106,6 @@ public class GridAdapter extends BaseAdapter {
                     request.show(fm, "Select");
                 }
             });
-            Animation anim = new ScaleAnimation(
-                    0.95f, 1f, // Start and end values for the X axis scaling
-                    0.95f, 1f, // Start and end values for the Y axis scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f, // Pivot point of X scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f); // Pivot point of Y scaling
-            anim.setFillAfter(true); // Needed to keep the result of the animation
-            anim.setDuration(2000);
-            anim.setRepeatMode(Animation.INFINITE);
-            anim.setRepeatCount(Animation.INFINITE);
-            imageView.startAnimation(anim);
 
         } else if (names.get(position).toString().equals("SCHEDULER")) {
             imageView.setImageResource(R.drawable.ic_schedule);
@@ -130,16 +116,6 @@ public class GridAdapter extends BaseAdapter {
                     activity.startActivity(launchinIntent);
                 }
             });
-            Animation anim = new ScaleAnimation(
-                    0.95f, 1f, // Start and end values for the X axis scaling
-                    0.95f, 1f, // Start and end values for the Y axis scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f, // Pivot point of X scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f); // Pivot point of Y scaling
-            anim.setFillAfter(true); // Needed to keep the result of the animation
-            anim.setDuration(2000);
-            anim.setRepeatMode(Animation.INFINITE);
-            anim.setRepeatCount(Animation.INFINITE);
-            imageView.startAnimation(anim);
 
         } else if (names.get(position).toString().equals("NOTES")) {
             imageView.setImageResource(R.drawable.ic_notes);
@@ -150,16 +126,6 @@ public class GridAdapter extends BaseAdapter {
                     activity.startActivity(launchinIntent);
                 }
             });
-            Animation anim = new ScaleAnimation(
-                    0.95f, 1f, // Start and end values for the X axis scaling
-                    0.95f, 1f, // Start and end values for the Y axis scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f, // Pivot point of X scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f); // Pivot point of Y scaling
-            anim.setFillAfter(true); // Needed to keep the result of the animation
-            anim.setDuration(2000);
-            anim.setRepeatMode(Animation.INFINITE);
-            anim.setRepeatCount(Animation.INFINITE);
-            imageView.startAnimation(anim);
 
         } else if (names.get(position).toString().equals("PROFILE")) {
             imageView.setImageResource(R.drawable.ic_profile);
@@ -170,16 +136,7 @@ public class GridAdapter extends BaseAdapter {
                     activity.startActivity(launchinIntent);
                 }
             });
-            Animation anim = new ScaleAnimation(
-                    0.95f, 1f, // Start and end values for the X axis scaling
-                    0.95f, 1f, // Start and end values for the Y axis scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f, // Pivot point of X scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f); // Pivot point of Y scaling
-            anim.setFillAfter(true); // Needed to keep the result of the animation
-            anim.setDuration(2000);
-            anim.setRepeatMode(Animation.INFINITE);
-            anim.setRepeatCount(Animation.INFINITE);
-            imageView.startAnimation(anim);
+
         } else if (names.get(position).toString().equals("CGPA CALCULATOR")) {
             imageView.setImageResource(R.drawable.ic_cgpa);
             v.setOnClickListener(new View.OnClickListener() {
@@ -189,16 +146,7 @@ public class GridAdapter extends BaseAdapter {
                     activity.startActivity(launchinIntent);
                 }
             });
-            Animation anim = new ScaleAnimation(
-                    0.95f, 1f, // Start and end values for the X axis scaling
-                    0.95f, 1f, // Start and end values for the Y axis scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f, // Pivot point of X scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f); // Pivot point of Y scaling
-            anim.setFillAfter(true); // Needed to keep the result of the animation
-            anim.setDuration(2000);
-            anim.setRepeatMode(Animation.INFINITE);
-            anim.setRepeatCount(Animation.INFINITE);
-            imageView.startAnimation(anim);
+
         } else if (names.get(position).toString().equals("COMMUNICATION")) {
             imageView.setImageResource(R.drawable.email_symbol);
             v.setOnClickListener(new View.OnClickListener() {
@@ -208,16 +156,7 @@ public class GridAdapter extends BaseAdapter {
                     activity.startActivity(launchinIntent);
                 }
             });
-            Animation anim = new ScaleAnimation(
-                    0.95f, 1f, // Start and end values for the X axis scaling
-                    0.95f, 1f, // Start and end values for the Y axis scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f, // Pivot point of X scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f); // Pivot point of Y scaling
-            anim.setFillAfter(true); // Needed to keep the result of the animation
-            anim.setDuration(2000);
-            anim.setRepeatMode(Animation.INFINITE);
-            anim.setRepeatCount(Animation.INFINITE);
-            imageView.startAnimation(anim);
+
         } else if (names.get(position).toString().equals("MUSIC")) {
             imageView.setImageResource(R.drawable.music_symbol);
             v.setOnClickListener(new View.OnClickListener() {
@@ -227,16 +166,6 @@ public class GridAdapter extends BaseAdapter {
                     activity.startActivity(launchinIntent);
                 }
             });
-            Animation anim = new ScaleAnimation(
-                    0.95f, 1f, // Start and end values for the X axis scaling
-                    0.95f, 1f, // Start and end values for the Y axis scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f, // Pivot point of X scaling
-                    Animation.RELATIVE_TO_SELF, 0.5f); // Pivot point of Y scaling
-            anim.setFillAfter(true); // Needed to keep the result of the animation
-            anim.setDuration(2000);
-            anim.setRepeatMode(Animation.INFINITE);
-            anim.setRepeatCount(Animation.INFINITE);
-            imageView.startAnimation(anim);
         }
 
         textView.setText(names.get(position).toString());
