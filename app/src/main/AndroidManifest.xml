@@ -30,12 +30,6 @@
             android:name=".main.attendance.AttendanceActivity"
             android:parentActivityName=".main.AppBase" />
         <activity
-            android:name=".main.components.ResultActivity"
-            android:parentActivityName=".main.components.CgpaActivity" />
-        <activity
-            android:name=".main.components.CgpaActivity"
-            android:parentActivityName=".main.AppBase" />
-        <activity
             android:name=".main.notes.NoteActivity"
             android:parentActivityName=".main.AppBase" />
         <activity

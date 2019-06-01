@@ -4,17 +4,13 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.DisplayMetrics;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
-import android.widget.RelativeLayout;
 
 import assistant.genuinecoder.s_assistant.R;
 
 public class About extends AppCompatActivity {
 
-    Animation anim1, anim2;
+    String url = "https://www.facebook.com/nrithyopasana/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +19,6 @@ public class About extends AppCompatActivity {
     }
 
     public void openFacebookPage(View v) {
-        String url = "https://www.facebook.com/nrithyopasana/";
         Uri webpage = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
         if (intent.resolveActivity(getPackageManager()) != null) {

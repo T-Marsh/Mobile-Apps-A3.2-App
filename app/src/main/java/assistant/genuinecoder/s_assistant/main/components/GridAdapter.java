@@ -137,16 +137,6 @@ public class GridAdapter extends BaseAdapter {
                 }
             });
 
-        } else if (names.get(position).toString().equals("CGPA CALCULATOR")) {
-            imageView.setImageResource(R.drawable.ic_cgpa);
-            v.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent launchinIntent = new Intent(activity, CgpaActivity.class);
-                    activity.startActivity(launchinIntent);
-                }
-            });
-
         } else if (names.get(position).toString().equals("COMMUNICATION")) {
             imageView.setImageResource(R.drawable.email_symbol);
             v.setOnClickListener(new View.OnClickListener() {
