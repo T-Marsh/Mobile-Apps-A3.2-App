@@ -47,16 +47,11 @@ public class AppBase extends AppCompatActivity {
         divisions.add("Junior Class");
         divisions.add("Middle Class");
         divisions.add("Senior Class");
-//        divisions.add("S4 COMPUTER SCIENCE");
-//        divisions.add("S5 COMPUTER SCIENCE");
-//        divisions.add("S6 COMPUTER SCIENCE");
-//        divisions.add("S7 COMPUTER SCIENCE");
         gridView = (GridView) findViewById(R.id.grid);
         basicFields.add("ATTENDANCE");
         basicFields.add("SCHEDULER");
         basicFields.add("NOTES");
         basicFields.add("PROFILE");
-        basicFields.add("CGPA CALCULATOR");
         basicFields.add("COMMUNICATION");
         basicFields.add("MUSIC");
         adapter = new GridAdapter(this, basicFields);
